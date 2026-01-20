@@ -50,5 +50,5 @@ on console.log
 <p>person.name= "user"; ✅</p>
 <p>person = {} ; ❌ </p>
 <p>Answer or Error: user</p>
-<p>Why :it gives you the const value user beacuse const value can not be changed  </p>
+<p>Why : it gives you the const value user beacuse const value can not be changed , property change thay pan variable person nu e change nai thay </p>
 </div>
