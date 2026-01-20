@@ -83,5 +83,33 @@ var temp_d = 12;
 
 
 //excerise
-console.log(nm);
-let nm = "name";
+
+//1
+//console.log(nm);
+//let nm = "name";
+
+//2
+//console.log(b);
+//var b = "username";
+
+//3
+//var x = 1;
+//{
+//   var x= 2;
+//}
+//console.log(x);
+
+//4
+//let adi = 10; 
+//{
+ //   let adi = 20;
+ //   console.log("Inside:", adi);
+//}
+//console.log("Outside:", adi);
+
+//5
+//const person = {name: "demo"}; 
+//console.log(person.name);
+//person.name= "aditi"; 
+//console.log(person.name);
+//person = {} ; 
