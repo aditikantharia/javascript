@@ -68,20 +68,39 @@
 //     k++;
 // }
 
-// let k = 20;
-// while (k >=10){
-//     console.log(k);
-//     k--
-// }
-
-// let a = 60;
-// while (a >= 20){
+// let a = 50;
+// while (a >=20){
 //     console.log(a);
 //     a--
 // }
 
-// let a = 30;
-// while (a >= 20){
-//     console.log(a);
+// let b= 60;
+// while (b >= 20){
+//     console.log(b);
+//     b--
+// }
+
+// let c = 30;
+// while (c >= 20){
+//     console.log(c);
 //     a--
 // }
+
+// exersice
+let d= 0;
+while (d < 20) {
+console.log("I'M ADITI");
+d++;
+}
+
+// let f = 50;
+// while (f <= 60) {
+//console.log(f);
+//
+//f--;
+// }
+
+// let q 50;
+// while (q <= 60) {
+//console.log(q);
+//}
