@@ -87,11 +87,11 @@
 // }
 
 // exersice
-let d= 0;
-while (d < 20) {
-console.log("I'M ADITI");
-d++;
-}
+// let d= 0;
+// while (d < 20) {
+// console.log("I'M ADITI");
+// d++;
+// }
 
 // let f = 50;
 // while (f <= 60) {
@@ -104,3 +104,65 @@ d++;
 // while (q <= 60) {
 //console.log(q);
 //}
+
+// let d= 1;
+// while (d<=20) {
+//     console.log("hello");
+//     d++;
+// }
+
+// let f = 50;
+// while (f <= 60){
+//     console.log(f);
+//     f++;
+// }
+
+// let q = 60;
+// while (q >= 50) {
+//     console.log(q);
+//     q--;
+// }
+
+//do while loop
+// do while loop
+// do {} while (end);
+// start
+// do{
+// code
+// change}
+// while(end);
+
+// let j = 10; // start
+// do {
+// console.log("do while loop:", j); // code
+// j++; // change (condition)
+// } while (j < 21); // while check after executing code block (end)
+
+// let z = 1; // start
+// do {
+//     console.log("do while loop error:", z); // code
+//     z++; // change (condition)
+// } while (z < 10);
+// why:
+
+// break
+// for (let k = 1; k< 201; k++) {
+//     console.log("Loop with break", k);
+//     if (k === 30) {
+// break;
+//     }
+// }
+// for (let k = 10; k< 20; k++) {
+//     console.log("Loop with break", k);
+//     if (k === 5) {
+// break;
+//     }
+// }
+
+// continue
+for (let a = 1; a= 10; a++) {
+    if (a === 5) {
+    continue;
+    }
+    console.log(a);
+}
