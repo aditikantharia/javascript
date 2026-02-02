@@ -92,3 +92,55 @@ console.log(product, price)
 }
 cart3();
 
+//1.....
+//rest -> Jayre function ma multiple arguments pass karva to vadhare params banava
+//pade chhe mate te na karvu pade te mate rest parameter use kariye chhiye (rest -->...
+//jo funtion na parameter ni anadar lakhvama aave chhe)
+// function abcd (v1, v2, v3, v4, v5, v6, v7, v8, v9, v10) {
+// console.log(v1, v2, v3, v4, v5, v6, v7, v8, v9, v10);
+// }
+// abcd(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+// function cart4 (product) {
+// console.log(product);
+// }
+// cart4("p1", "p2", "p3", "p4", "p5");
+
+// function abcd1(...numbers) {
+// console.log(numbers);
+// }
+// abcd1(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); // how to handle multiple arguments
+// function abcd2 (v1, v2, ...numbers) {
+// console.log(v1, v2, numbers);
+// }
+
+
+// 2....
+// rest -> Jayre function ma multiple arguments pass karva to vadhare params banava
+//pade chhe mate te na karvu pade te mate rest parameter use kariye chhiye (rest-> jo funtion na parameter ni anadar lakhvama aave chhe) ...
+function abcd(v1, v2, v3, v4, v5, v6, v7, v8, v9, v10) {
+console.log(v1, v2, v3, v4, v5, v6, v7, v8, v9, v10);
+}
+abcd(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+function abcd1(...numbers) {
+console.log(numbers);
+}
+abcd1(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); // how to handle multiple arguments
+function abcd2(v1, v2, ...numbers) {
+console.log(v1, v2, numbers);
+}
+abcd2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+//return or early return
+//return-->
+// retrun or early return
+// retrun --> function mathi value bahar mokalva mate
+
+function getValue (value) {
+if (value < 25) return "Value is less than 25";
+else if (value < 50) return "Value is less than 50";
+else if (value < 75) return "Value is less than 75";
+else if (value < 100) return "Value is less than 100";
+return "Value is 100 or more";
+}
+let result = getValue(120);
+console.log(result);
