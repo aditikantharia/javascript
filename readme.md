@@ -310,3 +310,33 @@ console.log("Matched");
                     Scissors paper ne kaapi nakhe che (scissors wins)</p>
 <p>Why :  </p>
 <div>
+
+<div>
+<h1>Example 1:</h1>
+<p>Print number from 1 to 10 using a for loop.</p>
+<p>for(let a = 1; a<=10;a++){
+    console.log("loop",a);
+    }
+</p>
+</div>
+
+<div>
+<h1>Example 2:</h1>
+<p>Print number from 10 to 1 using while loop.</p>
+<p>let a = 10;
+while(a>=1){
+    console.log(a);
+    a--;
+}
+</P>
+</div>
+
+<div>
+<h1>Example 3:</h1>
+<p>Print even numbers from 1 to 20 using for loop.</p>
+<p>for(let i=1; i<=20; i++){
+    if(i%2 ===0){
+    console.log(i);
+    }
+}</p>
+</div>

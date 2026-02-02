@@ -152,6 +152,7 @@
 // break;
 //     }
 // }
+
 // for (let k = 10; k< 20; k++) {
 //     console.log("Loop with break", k);
 //     if (k === 5) {
@@ -160,9 +161,35 @@
 // }
 
 // continue
-for (let a = 1; a= 10; a++) {
-    if (a === 5) {
-    continue;
-    }
-    console.log(a);
-}
+// for (let a = 1; a= 10; a++) {
+//     if (a === 5) {
+//     continue;
+//     }
+//     console.log(a);
+// }
+//excerise
+//Example 1:
+//Print number from 1 to 10 using a for loop.
+// for(let a = 1; a<=10;a++){
+//     console.log("loop",a);
+//     }
+
+//example-2
+//Print number from 10 to 1 using while loop.
+// let a = 10;
+// while(a>=1){
+//     console.log(a);
+//     a--;
+// }
+
+// example-3
+//Print even numbers from 1 to 20 using for loop.
+// for(let i=1; i<=20; i++){
+//     if(i%2 ===0){
+//     console.log(i);
+//     }
+// }
+
+// for(let x=2;x<=20;x+=2){
+//      console.log(x);
+// }
