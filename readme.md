@@ -340,3 +340,379 @@ while(a>=1){
     }
 }</p>
 </div>
+
+<div>
+<h1>Example 4:</h1>
+<p>Print odd numbers from 1 to 15 using while loop.</p>
+<p>let i= 1;</p>
+<p>while(i<=15){
+    if(i%2 !==0){ // or (i%2 ===1)
+    console.log(i);
+    }
+    i++;
+}</p>
+</div>
+
+<div>
+<h1>Example 5:</h1>
+<p>Print the multiplication table of 5.</p>
+<p>
+for(let i=1; i<=10; i++){
+    console.log(`5 x ${i} = ${5*i}`);
+}
+</p>
+</div>
+
+<div>
+<h1>Example 6:</h1>
+<p>Find the sum of numbers from 1 to 100 using a loop.</p>
+<p>
+let sum = 0;
+for(let i=1; i<=100; i++){
+    // let sum =0;
+    sum = sum + i;
+    // console.log(sum);
+}
+console.log(sum);
+</p>
+</div>
+
+<div>
+<h1>Example 7:</h1>
+<p>Print all numbers between 1 to 50 that are divisible by 3.</p>
+<p>
+for(let i=1; i<=50; i++){
+    if(i%3 === 0){
+        console.log(i);
+    }
+}
+</p>
+</div>
+
+<div>
+<h1>Example 8:</h1>
+<p>Ask the user for a number and print whether each number from 1 to that number is even or odd.</p>
+<p>
+let num = prompt("give a number");
+for(let i=1; i <=numl i++){
+    if(i%2 ===0){
+        console.log(i, " is even");
+    }else{
+        console.log(i, " is odd");
+    }
+}
+</p>
+</div>
+
+<div>
+<h1>Example 9:</h1>
+<p>Count how many numbers between 1 to 100 are divisible by 3 or 5.</p>
+<p>
+for(let i=1; i<=100; i++){
+    if(i%3 ===0 || i%5 ===0){
+        console.log(i);
+    }
+}
+</p>
+</div>
+
+<div>
+<h1> (Break and Continue)Example 10:</h1>
+<p>Stop at First Multiple of 7</p>
+<p>Write a Loop from 1 to 100 that:</p>
+<p>Prints Each number</p>
+<p>Stop Completely when it finds the first number divisible by 7</p>
+<p>
+for(let i=1; i<=100; i++){
+    console.log(i);
+    if(i%7 ===0){
+        break;
+    }
+}
+</p>
+</div>
+
+<div>
+<h1> (Break and Continue)Example 11:</h1>
+<p>Skip Multiples of 3</p>
+<p>Write a Loop From 1 to 20 that:</p>
+<p>Skip number divisible by 3</p>
+<p>Prints all other numbers</p>
+<p>
+for(let i=1; i<=20; i++){
+    if(i%3 ===0){
+        continue;
+    }
+    console.log(i);
+
+}
+</p>
+</div>
+
+<div>
+<h1> (Break and Continue)Example 12:</h1>
+<p>Print First 5 Odd Numbers</p>
+<p>Write a loop from 1 to 100 that:</p>
+<p>Prints only 5 odd numbers</p>
+<p>Then stops the loop</p>
+<p>Use Both if, continue and a counter + break</p>
+<p>
+count = 0;
+for(let i =1; i<=100; i++){
+    if(i%2 ===1){
+        count++;
+        console.log(i)
+    }
+    console.log(i);
+    if(count ===5){cha
+        break;
+    }
+}
+</p>
+</div>
+
+<!--date:03/02/2026-->
+
+## Function Examples
+<hr>
+<div>
+<h1> Example 1: </h1>
+<p>What's the difference between function declaration and function expression in terms of hoisting?</p>
+<p>Answer or Error: function declaration is Fully hoisted and function expression is Only variable hoisted. </p>
+</div>
+
+<div>
+<h1> Example 2: </h1>
+<p>greet();</p>
+<p>function greet(){
+    console.log("Hello!");
+}</p>
+<p>Ans or Err: Hello!  and Why : it's using hosting function means function declaration use kre che</p>
+</div>
+
+<div>
+<h1> Example 3: </h1>
+<p>Convert normal function to Arrow Function</p>
+<p>function add(a, b){
+    return a + b;
+}</p>
+<p>function add=(a, b)=>{
+    return a + b;
+};</P>
+<p>Ans:a = 5;
+        b = 3;
+        a+b;
+        =8 
+    And How: it's do addition of this arrow funcation </p>
+</div>
+
+<div>
+<h1> Example 4: </h1>
+<p>Identify what is parms and what is args</p>
+<p>function welcome(name){
+    console.log("Welcome " + name);
+}</p>
+<p>welcome("user");</p>
+<p>Ans:params:name
+        argument:user and why: function define parameter and function call time define argument. </p>
+</div>
+
+<div>
+<h1> Example 5: </h1>
+<p>how many parameters and args</p>
+<p>function temp (a, b, c){
+    console.log(a,b,c);
+}</p>
+<p>temp(1, 2)</p>
+<p> Ans:parameters:3
+        args:2
+    ,Err:no error 
+    and Why: argument ni under parameter missing che</p>
+</div>
+
+<div>
+<h1> Example 6: </h1>
+<p>Predict the output</p>
+<p>function temp_user(name = "Guest"){
+    console.log("Hello " + name);
+}</p>
+<p>temp_user();</p>
+<p>Ans:Hello Guest,
+ Err:no error
+  and Why:deafault parameter che etle guest aave em</p>
+</div>
+
+<div>
+<h1> Example 7: </h1>
+<p>what is ... operator and why use it  in function</p>
+<p>function number(...numbers){
+    console.log(numbers);
+}</p>
+<p>number(1, 2, 3, 4, 5)</p>
+<p>Ans:[1, 2, 3, 4, 5]
+, Err:no error
+ and why:REST operator che</p>
+</div>
+
+<div>
+<h1> Example 8: </h1>
+<p>Use rest Parameters to accept any number of scores and return the total</p>
+<p>function calculateTotal(...scores){
+    let total = 0;
+    for(let i=0; i<=scores.length; i++){
+        total += scores[i];
+    }
+    return total;
+}</p>
+<p>function calculateTotal(...scores){
+    let total = 0;
+    scores.forEach(function(val){
+        total = total + val;
+    });
+    return total;
+}</p>
+<p>calculateTotal(10, 20 ,30 ,40 ,50)</p>
+<p>let sumtotal = calculateTotal(10, 20 ,30 ,40 ,50)</p>
+<p>Ans:1st nu output NaN & 2nd nu output 150
+    , Err:1st ma error beacause of logical error 2nd no error 
+    and Why:1ST ma less than qual to che jyre ema error aave che logical ni and 2nd ma rest parameter che je value add kare</p>
+</div>
+
+<div>
+<h1> Example 9: </h1>
+<p>Fix the function using early return</p>
+<p>function checkAge(age){
+    if(age < 18){
+        console.log("Too Young");
+    } else {
+        console.log("Access Granted");
+    }
+}</p>
+<p>Ans:checkAge(16);
+ And how:Condition true hoy toh if
+Condition false hoy toh else</p>
+
+</div>
+
+<div>
+<h1> Example 10: </h1>
+<p>What is the return value of above function</p>
+<p>function f(){ return;}</p>
+<p>Ans:function f() { 
+    return; 
+}
+ and Why:return; koi value specify nathi karto ,Etle function default value undefined return kare che.</p>
+</div>
+
+<div>
+<h1> Example 11: </h1>
+<p>What does is mean when we say "functions are first-class citizens"?</p>
+<p>Ans and Why </p>
+</div>
+
+<div>
+<h1> Example 12: </h1>
+<p>Can You assign a function to a variable and then all it?</p>
+<p>let a = function(){console.log("Hello");}</p>
+<p>a();</p>
+</div>
+
+<div>
+<h1> Example 13: </h1>
+<p>Pass A function into anthor funtion and excute it inside.</p>
+<p>Ans and Why, How</p>
+<p>function abcd(val){val()}</p>
+<p>abcd(function(){ console.log("Hello")})</p>
+</div>
+
+<div>
+<h1> Example 14: </h1>
+<p>What is higer order function?</p>
+<p>Ans and Why</p>
+</div>
+
+<div>
+<h1> Example 16: </h1>
+<p>pure or impure function?</p>
+<p>let a = 5;</p>
+<p>function num(num){
+total += num;
+}
+<p>num(3);</p>
+<p>Ans and Why</p>
+</div>
+
+<div>
+<h1> Example 17: </h1>
+<p>convert example 16 function into pure function?</p>
+<p>Ans and how</p>
+</div>
+
+<div>
+<h1> Example 18: </h1>
+<p>What is Closure? When is it created?</p>
+<p>Ans and Example</p>
+</div>
+
+<div>
+<h1> Example 19: </h1>
+<p>What's logged?</p>
+<p>function outer(){
+    let count = 0;
+    return function(){
+        count++;
+        console.log(count);
+    };
+}</p>
+<p>const counter = outer();</p>
+<p>counter();</p>
+<p>counter();</p>
+<p>Ans, Err and Why</p>
+</div>
+
+<div>
+<h1> Example 20: </h1>
+<p>Convert below function into an IIFE:</p>
+<p>function init(){
+    console.log("Initialized");
+}</p>
+<p>Ans and Why</p>
+</div>
+
+<div>
+<h1> Example 21: </h1>
+<p>What is the use of IIFE? Name one real-world use case.</p>
+<p>let fun=(function(){
+    let score = 0; // this is private variable
+    return{
+        getScore: function(){
+            console.log(score);
+        },
+        setScore: function(val){
+            score = val;
+        }
+    }
+})()</p>
+<p>Ans and Why</p>
+</div>
+
+<div>
+<h1> Example 22: </h1>
+<p>What will be the output here and why?</p>
+<p>temp_var();</p>
+<p>var temp_var = function(){
+    console.log("Hello");
+}</p>
+<p>Ans and Why</p>
+</div>
+
+<div>
+<h1> Example 23: </h1>
+<p>What will be the output here and why?</p>
+<p>temp_var();</p>
+<p>function temp_var(){
+    console.log("Hello");
+}</p>
+<p>Ans and Why</p>
+</div>
+ 
