@@ -886,10 +886,8 @@ why: negative value start form last value that's -1 so count -3 and -1 ,,,-3 mea
 
 // Q24. splice() vs slice() decision
 // Which method would you use if you want to:
-// a) Update the original array
-// b) Keep the original array unchanged
-
-
+// a) Update the original array -->splice()-->beacuse they change the original array and slice don't change original array
+// b) Keep the original array unchanged-->slice()--> keep original array and create snew array
 
 
 // Q25. Chained methods (brain teaser)
