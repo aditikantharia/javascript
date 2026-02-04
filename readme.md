@@ -715,4 +715,187 @@ total += num;
 }</p>
 <p>Ans and Why</p>
 </div>
- 
+
+ <!--day:7(array)-->
+ // Q1. push()
+// You are building a to-do app. Add a new task 'Buy milk' to the tasks array.
+let tasks = ['Wake up', 'Brush teeth'];
+ans:task.push('Buy milk');
+['Wake up', 'Brush teeth','Buy milk]
+why:add the value into the end
+
+// Q2. pop()
+// Remove the last notification from the notifications array.
+let notifications = ['Email', 'Message', 'Reminder'];
+ans:notifications.pop();
+['Email', 'Message']
+why:remove the value into the end
+
+
+// Q3. shift()
+// A queue system removes the first customer. Remove the first customer.
+let customers = ['Customer1', 'Customer2', 'Customer3'];
+ans:customers.shift();
+['Customer2', 'Customer3'];
+why:remove the value into the first
+
+
+// Q4. unshift()
+// A new song is added to the beginning of the playlist.
+let playlist = ['Song B', 'Song C'];
+ans:playlist.unshift('Song A');
+['Song A','Song B', 'Song C']
+why:add the value into the first point
+
+// Q5. splice()
+// In a classroom list, remove 'Alex' and add 'John' and 'Sara' in the same position.
+let students = ['Mike', 'Alex', 'Emma', 'Sophia'];
+ans:students.splice(1,1,'john','sara');
+['Mike', 'Emma', 'Sophia']--remove
+['Mike', 'john', 'sara', 'Emma', 'Sophia']--remove and add
+why:remove value into array--specific position and specific number of values
+
+// Q6. splice()
+// From the menu, remove 2 items starting from index 1.
+let menu = ['Burger', 'Pizza', 'Pasta', 'Salad'];
+ans:menu.splice(1,2);
+['Burger','Salad']
+why:remove value into array--specific position and specific number of values
+
+
+// Q7. slice()
+// Create a new array that contains only weekend days.
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+ans:let weekday = days1.slice(5,8);
+['Saturday', 'Sunday']
+why:copy values from array specific position and specific number of values
+
+
+// Q8. reverse()
+// Reverse the order of levels in a game.
+let levels = ['Easy', 'Medium', 'Hard'];
+ans:levels.reverse();
+['Hard', 'Medium', 'Easy']
+why: reverse the value 
+
+
+// Q9. sort()
+// Sort the scores in ascending order.
+let scores = [45, 12, 78, 34, 89];
+ans:scores.sort();
+[12, 34, 45, 78, 89]
+why: sort the value into assending.
+
+
+// Q10. sort() with numbers
+// Sort the prices from lowest to highest.
+let prices = [199, 49, 999, 299, 149];
+ans:let prices = [199, 49, 999, 299, 149];
+let prices1 = prices.sort
+(function(a,b){
+    return a-b;
+})
+[49, 149, 199, 299, 999]
+why: sort the value into lowest to highest.
+
+
+// Q11. slice() vs splice()
+// From the array, create a new array of the first 3 items WITHOUT changing the original array.
+let products = ['Laptop', 'Phone', 'Tablet', 'Monitor', 'Keyboard'];
+ans:let pro = products.splice(0,3);
+why: first 3 value add...
+
+// Q12. splice() complex
+// In the array below:
+// 1. Remove 'Blue'
+// 2. Add 'Purple' and 'Orange' at the same position
+let colors = ['Red', 'Green', 'Blue', 'Yellow'];
+ans:colors.splice(2, 1, 'Purple', 'Orange')
+['Red', 'Green', 'Purple', 'Orange', 'Yellow']
+why:remove the  2,1 and add the pruple into the orange..
+
+
+// Q13. reverse() + push()
+// Reverse the array and then add 'Final Step' at the end.
+let steps = ['Step 1', 'Step 2', 'Step 3'];
+ans:steps.reverse().push('final round');
+['Step 3', 'Step 2', 'Step 1', 'final round']
+why: first reverse the value and push the value into startinfg point..
+
+
+// Q14. sort() strings
+// Sort names alphabetically, ignoring case sensitivity.
+let names = ['alice', 'Bob', 'charlie', 'David'];
+ans: names.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+['alice', 'Bob', 'charlie', 'David']
+why: sorting with ignoring case..
+
+
+// Q15. Combination Question
+// You are managing a movie watchlist:
+// 1. Add 'Inception'
+// 2. Remove the first movie
+// 3. Sort the list alphabetically
+let movies = ['Avatar', 'Titanic', 'Gladiator'];
+ans:movies.push("inseption");
+    movies.shift();
+    movies.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+['Gladiator', 'inseption', 'Titanic']
+why: add alre remove kare and sorting kare
+
+// Q16. splice() return value
+// What does the splice method return in this case?
+let nums1 = [1, 2, 3, 4];
+nums1.splice(1, 2);
+ans:[1, 4]
+why:1 to 2 remove kare index etle 1 and 4 aave
+
+
+
+// Q17. slice() immutability check
+// After executing slice, does the original array change?
+let nums2 = [10, 20, 30, 40];
+let result = nums2.slice(1, 3);
+ans:[20,30]
+why:1 to 3 remove kare index etle 20 and 30 aave
+
+
+// Q19. reverse() mutation
+// After reversing, what happens to the original array reference?
+let letters = ['a', 'b', 'c'];
+let reversedLetters = letters.reverse();
+ans:['c', 'b', 'a']
+why:reverse the letter
+
+
+// Q21. splice() edge case
+// What happens if deleteCount is 0?
+let arr = ['x', 'y', 'z'];
+arr.splice(1, 0, 'new');
+ans:['x', 'new', 'y', 'z']
+why: add value into index 1 that's new 
+
+
+// Q23. slice() negative index
+// What elements are returned?
+let values = [100, 200, 300, 400, 500];
+let sliced = values.slice(-3, -1);
+ans:[300, 400]
+why: negative value start form last value that's -1 so count -3 and -1 ,,,-3 means300 -1 means 500 so give the 300 and 400 starting value print nai kare jyre ending value print kare em
+
+
+// Q24. splice() vs slice() decision
+// Which method would you use if you want to:
+// a) Update the original array
+// b) Keep the original array unchanged
+
+
+
+
+// Q25. Chained methods (brain teaser)
+// What is the final value of arr?
+let arr2 = [1, 2, 3];
+arr2.push(arr2.shift());
+ans:[2, 3, 1]
+why: shift() --> removes first element-->[2,3]-->REMOVE THAY 1
+    push() → adds element to the end-->[2,3,1]-->1 ADD THAY EM
