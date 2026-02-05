@@ -4,18 +4,18 @@
 // [2, 4, 5, 6]
 // create
 // variable_name = [values]
-let arr = [1, 2, 3, 4];
+let arr4 = [1, 2, 3, 4];
 // access
 // position = [0123]
 // access
 // array_name [position / index]
-arr[0]
+arr4[0]
 // modify
 // array_name [position] = new value
-arr[0] = 10;
-arr[1] = 20;
-arr[2] = 30;
-arr[3] = 40;
+arr4[0] = 10;
+arr4[1] = 20;
+arr4[2] = 30;
+arr4[3] = 40;
 
 // Array Methods:
 // push, pop, shift, unshift, splice, slice, reverse, sort
@@ -321,4 +321,72 @@ let people = ["John", "Sara", "Mike", "Anna",
 
 // var j male, bas e j and Anagal check ij na kare)
 let person = people.find((name) => name === "Sara");
-console.log(person);
+console.log(person)
+
+//filter --> you want to find all visitors named "sara" in the list (all data check kare and list na end sudhi check kare)
+let Allsara = people.filter((name) => name === "Sara");
+console.log(Allsara);
+
+//eaxmple 2: books bus for travel
+// some
+// check kare chhe ke array ma koi pan" ek item codition satisfy kare" chhe ke nahi
+// condition true aave tyare stop kare
+// some() vs find() --> some() can't return you value its return true or false, find() return value of array
+// give ans in true and false
+let marks2 = [10, 20, 35, 80];
+let any =  marks2.some( (val) => {
+if (val < 85) return 12;
+// if (val < 85) return "need improvement";
+});
+//IF ANY 1 VALUE ADD THEN GIVE THE TRUE OTHERWISE FALSE..
+// use case --check if some product are out of stock in your cart
+
+// every
+// check kare chhe ke array ma baddha j items
+// condition satisfy kare chhe ke nahi
+// true -- baha items condition match kare
+// false -- ek pan fail thay to
+
+let def = [20, 30, 40, 50];
+let num = def.every(function(val){
+    return val < 20;
+})
+
+
+// use case --> check all student is pass or not
+
+// some(), find(), filter(), every()
+
+// let products = ["Tablet", "Mobile", "Laptop","Mobile"]
+
+// method --> condition --> output
+
+//.some()   --> item === "Mobile" --> true
+// .find()   --> item === "Mobile" --> "Mobile"
+// .filter() --> item === "Mobile" --> ["Mobile",
+// "Mobile"]
+
+// .every()  --> item === "Mobile" --> false
+
+// Destructuring operator -- give value to variable
+// (ex. we don't use everytime arr4[1], just save it
+// into variable let j, k) = arr1)
+
+// let arr4 = [1, 2, 3, 4, 5]
+// let [j, k] = arr4; // --> desthucturing
+// //  let [j, , k] = arr4;
+// console.log(k);
+
+// let temp_a = arr4[4]
+// let temp_b = arr4[2]
+// let temp_c = arr4[1]
+// let user_data = ["text","text@gmail.com","male","surat"]
+
+
+// spread oprator --copy value from main array
+let arr8 = [1, 2, 3, 4, 5, 6, 7];
+
+// let arr4 = arr3; //just give reference not change arr3 too) copy value (when you change into arr4 that will be
+let arr9 = [...arr8];
+//... --> rest --> into function
+//... --> spred --> into Array and Object
