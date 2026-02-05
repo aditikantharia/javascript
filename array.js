@@ -206,3 +206,119 @@ let sliced = values.slice(-3, -1);
 //25
 let arr2 = [1, 2, 3];
 arr2.push(arr2.shift());
+
+// For Each Loop
+// for Each --Array ni darek value mate loop chalse
+let i5= [10, 35, 40, 68];
+i5.forEach((val) => {
+let new_val = val + 10;
+console.log(new_val);
+});
+// //answer:20, 45, 50,78
+
+[5, 58, 42, "Hello"].forEach (val =>{
+let new_arr = val + 2;
+console.log(new_arr)
+})
+//answer:7, 60, 44, hello2
+
+//.map() Method:
+// map tyare j use karvu ke jyare ek new array create karvo chhe
+// first map create a black array -- only for understanding
+let data = [10, 20, 50, 40, 15];
+// same like a for each loop but map return a newarray
+let temp_data = data.map((val)=>{
+if (val >= 5 ){
+return val;
+}
+});
+console.log(temp_data); 
+
+//new array ma store karva hoy
+// if you want to show only electronics producat on your homepage
+let marks = [10, 5, 20, 25, 15]
+let final_marks = marks.map((val) => {
+if(val == 5) {
+return val + 4;
+}
+return val;
+});
+console.log(final_marks); 
+//answer:[10, 9, 20, 25, 15]
+
+// filter
+// filter tyare use karvu ke jyare ek new array create karvo chhe with condition
+// in return true/false
+// if true --> add into new array
+// if else(false) --> not add into new array
+let laptops_price = [15000, 20000, 30000, 65000, 99000, 45000];
+let expensive_laptops = laptops_price.filter((price)=> {
+     if (price > 30000) return true;
+});
+console.log(expensive_laptops); 
+//answer:[65000, 99000, 45000]
+
+// je value 30000 thi vadhare chhe te new array ma
+//add thase and briji value ne array ma add nahi kare
+
+// use case data ma thi specific data new array ma store karvo hoy band off condetion
+// ex. poduct ma thi specific price na producat new array ma store karva hoy
+// if you want to show only expensive producat on your homepage
+// if you want to filter producat based on price
+let product_type = ["Mobile", "Tablet", "Laptop", "Mouse", "Keyborad"];
+let filter_product_type = product_type.filter((type)=>{
+if (type === "Tablet" || type == "Mobile") 
+    return true;
+});
+console.log(filter_product_type); 
+
+// reduce
+// reduce tyare j use karvu ke jare ek single value calculate karvi hoy from array
+
+let total_price = [1, 3, 5, 7, 10];
+//let total_price = [10, 68, 45, 58, 52, 48];
+let final_price = total_price.reduce((accumulator,val) => {
+return accumulator + val;
+}, 0); // intial value of accumulator
+// theta + 10 =>10
+// 18 + 68 =>78
+// 78 + 45 =>123
+console.log("Final Price:", final_price);
+
+// find
+// find tyare j use karvu ke jare array mathi ek value find karvi hoy based on condition
+// find() return kare chhe array no element > callback no return value nahi
+// never returns what you return inside it
+// returns the array element itself not return array
+//.find() stops at the first match
+// It does not continue looping
+let product1 = ["Laptop", "Mobile", "Tablet", "desktop", "Smart Watch"];
+
+let find_product1 = product1.find((item) => {
+console.log("can't find product"); // not working why??
+    if (item == "Tablet") {   
+        return true;
+    } else if (item == "Smart Watch") {
+        return true;
+    } else {
+        return false;
+    }
+    });
+console.log(filter_product_type); 
+//answer: 3 times: can't find product
+// 2 times: ['Mobile', 'Tablet']
+
+
+// find vs filter
+// Real-life Scenario: Shopping Mall Security
+// your are a security guard at a shopping mall
+// check the list of visitors
+let people = ["John", "Sara", "Mike", "Anna",
+"David", "Sara"];
+
+// find ---> you are looking for the first person
+// named "Sara" in the list and stop searching (Pehli
+
+// var j male, bas e j and Anagal check ij na kare)
+let person = people.find((name) => name === "Sara");
+console.log(person);

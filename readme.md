@@ -896,4 +896,4 @@ let arr2 = [1, 2, 3];
 arr2.push(arr2.shift());
 ans:[2, 3, 1]
 why: shift() --> removes first element-->[2,3]-->REMOVE THAY 1
-    push() → adds element to the end-->[2,3,1]-->1 ADD THAY EM
+    push() → adds element to the end-->[2,3,1]-->1 ADD THAY EM 
