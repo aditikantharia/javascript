@@ -538,8 +538,7 @@ const words12 = ['Learning', 'JavaScript', 'is', 'fun'];
 const sentence = words12.reduce((text, words12) => text + ' ' + words12);
 
 //7
-//const marks12 = [35, 72, 88, 40, 25];
-const marks12 = [15, 12, 48, 40, 25];
+const marks12 = [35, 72, 88, 40, 25];
 const passCount = marks12.reduce((count, marks12) => {
   return marks12 >= 40 ? count + 1 : count;
 }, 0);
@@ -551,6 +550,7 @@ const finalBalance = transactions1.reduce((balance, amount) => balance + amount,
 //10
 const items = ['Pen', 'Book', 'Pencil'];
 const result1 = items.reduce((text, items) => text + ', ' + items);
+
 
 //day:8(map,filter,reduce)
 //1
