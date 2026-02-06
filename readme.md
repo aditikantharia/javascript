@@ -1197,3 +1197,86 @@ const result = items.reduce((text, item) => text + ', ' + item);
 ```
 answer:'Pen, Book, Pencil'
 ---
+
+
+<!--day-8(4 "map,filter,rduce ")-->
+### 1. Get even numbers
+**Real life:** Find even roll numbers
+```js
+const numbers = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+```
+answer:[2, 4, 6]
+
+---
+
+
+### 2. Filter adults
+**Real life:** Allow only 3+ users
+```js
+const ages = [2, 1, 10, 16, 5];
+function isAdult(ages) {
+  return ages >= 18;
+}
+const adults = ages.filter(isAdult);
+```
+answer:[]
+
+---
+
+### 3. Remove empty items
+**Real life:** Clean user input
+```js
+const inputs = ['Hello', '', 'World', '', 'JS'];
+const validInputs = inputs.filter(text => text !== '');
+```
+answer:['Hello', 'World', 'JS']
+---
+
+### 4. Filter passing marks
+**Real life:** Exam result system
+```js
+const marks = [35, 72, 88, 40, 25];
+const passedStudents = marks.filter(mark => mark >= 40);
+```
+answer:[72, 88, 40]
+---
+
+### 5. Get affordable prices
+**Real life:** Shopping app price filter
+```js
+const prices = [199, 499, 999, 1499, 299];
+const affordable = prices.filter(price => price <= 500);
+```
+answer:[199, 499, 299]
+---
+
+### 6. Filter long words
+**Real life:** Search keyword validation
+```js
+const words = ['hi', 'hello', 'javascript', 'ok'];
+function isLongWord(word) {
+  return word.length > 3;
+}
+const longWords = words.filter(isLongWord);
+```
+answer:['hello', 'javascript']
+---
+
+### 7. Filter positive numbers
+**Real life:** Bank transaction validation
+```js
+const transactions = [200, -100, 500, -50, 300];
+const credits = transactions.filter(amount => amount > 0);
+```
+answer:[200, 500, 300]
+
+---
+
+### 8. Filter numbers within a range
+**Real life:** Score selection
+```js
+const scores = [45, 60, 85, 30, 90];
+const selectedScores = scores.filter(score => score >= 50 && score <= 90);
+```
+answer:[60, 85, 90]

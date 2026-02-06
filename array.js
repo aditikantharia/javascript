@@ -551,3 +551,42 @@ const finalBalance = transactions1.reduce((balance, amount) => balance + amount,
 //10
 const items = ['Pen', 'Book', 'Pencil'];
 const result1 = items.reduce((text, items) => text + ', ' + items);
+
+//day:8(map,filter,reduce)
+//1
+const numbers11 = [1, 2, 3, 4, 5, 6];
+const evenNumbers11 = numbers11.filter(num => num % 2 === 0);
+
+//2
+const ages3 = [2, 1, 10, 16, 5];
+function isAdult(ages3) {
+  return ages3 >= 18;
+}
+const adults3 = ages3.filter(isAdult);
+
+//3
+const inputs1 = ['Hello', '', 'World', '', 'JS'];
+const validInputs1 = inputs1.filter(text => text !== '');
+
+//4
+const marks4 = [35, 72, 88, 40, 25];
+const passedStudents4 = marks4.filter(marks4 => marks4 >= 40);
+
+//5
+const prices2 = [199, 499, 999, 1499, 299];
+const affordable2 = prices2.filter(prices2 => prices2 <= 500);
+
+//6
+const words2 = ['hi', 'hello', 'javascript', 'ok'];
+function isLongWord(words2) {
+  return words2.length > 3;
+}
+const longWords2 = words2.filter(isLongWord);
+
+//7
+const transactions2 = [200, -100, 500, -50, 300];
+const credits2 = transactions2.filter(amount => amount > 0);
+
+//8
+const scores2 = [45, 60, 85, 30, 90];
+const selectedScores2 = scores2.filter(scores2 => scores2 >= 50 && scores2 <= 90);
