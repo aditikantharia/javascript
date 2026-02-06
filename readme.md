@@ -1103,3 +1103,97 @@ const scores = [45, 60, 85, 30, 90];
 const selectedScores = scores.filter(score => score >= 50 && score <= 90);
 ```
 answer:[60, 85, 90] 50 thi vadhu and 90 thi oochu..
+
+
+<!--day-8(3 "rduce ")-->
+
+### 1. Total money in wallet
+**Real life:** Add all cash amounts
+```js
+const money = [100, 200, 50];
+const totalMoney = money.reduce((sum, amount) => sum + amount, 0);
+```
+answer:350
+---
+
+### 2. Total steps walked in a week
+**Real life:** Fitness tracker
+```js
+const steps = [3000, 5000, 4000, 6000];
+function addSteps(total, step) {
+  return total + step;
+}
+const weeklySteps = steps.reduce(addSteps, 0);
+```
+answer:18000
+---
+
+### 3. Find total cart price
+**Real life:** Shopping bill
+```js
+const prices = [499, 299, 199];
+const totalPrice = prices.reduce((total, price) => total + price, 0);
+```
+answer:997
+---
+
+### 4. Find maximum score
+**Real life:** Highest exam mark
+```js
+const marks = [45, 88, 67, 92];
+const highest = marks.reduce((max, mark) => {
+  return mark > max ? mark : max;
+}, marks[0]);
+```
+answer:92
+---
+
+### 5. Count total characters
+**Real life:** Text length calculation
+```js
+const words = ['Hi', 'Hello', 'JS'];
+const totalChars = words.reduce((count, word) => count + word.length, 0);
+```
+answer:9
+
+---
+
+### 6. Combine words into a sentence
+**Real life:** Message builder
+```js
+const words = ['Learning', 'JavaScript', 'is', 'fun'];
+const sentence = words.reduce((text, word) => text + ' ' + word);
+```
+answer:'Learning JavaScript is fun'
+---
+
+### 7. Count passed students
+**Real life:** Result summary
+```js
+const marks = [35, 72, 88, 40, 25];
+const passCount = marks.reduce((count, mark) => {
+  return mark >= 40 ? count + 1 : count;
+}, 0);
+```
+answer:3
+---
+
+### 8. Calculate final balance
+**Real life:** Bank account calculation
+```js
+const transactions = [1000, -200, -300, 500];
+const finalBalance = transactions.reduce((balance, amount) => balance + amount, 0);
+```
+answer:1000
+---
+
+---
+
+### 10. Build comma-separated string
+**Real life:** Display values in UI
+```js
+const items = ['Pen', 'Book', 'Pencil'];
+const result = items.reduce((text, item) => text + ', ' + item);
+```
+answer:'Pen, Book, Pencil'
+---

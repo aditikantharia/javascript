@@ -506,3 +506,48 @@ const credits = transactions.filter(amount => amount > 0);
 //8
 const scores1 = [45, 60, 85, 30, 90];
 const selectedScores = scores1.filter(scores1 => scores1 >= 50 && scores1 <= 90);
+
+//Day-08(3)"reduce"
+//1
+const money = [100, 200, 50];
+const totalMoney = money.reduce((sum, amount) => sum + amount, 0);
+
+//2
+const step = [3000, 5000, 4000, 6000];
+function addSteps(total, step) {
+  return total + step;
+}
+const weeklySteps = step.reduce(addSteps, 0);
+
+//3
+const price11 = [499, 299, 199];
+const totalPrice = price11.reduce((total, price11) => total + price11, 0);
+
+//4
+const marks11 = [45, 88, 67, 92];
+const highest = marks11.reduce((max, marks11) => {
+  return marks11 > max ? marks11 : max;
+}, marks11[0]);
+
+//5
+const words11 = ['Hi', 'Hello', 'JS'];
+const totalChars = words11.reduce((count, words11) => count + words11.length, 0);
+
+//6
+const words12 = ['Learning', 'JavaScript', 'is', 'fun'];
+const sentence = words12.reduce((text, words12) => text + ' ' + words12);
+
+//7
+//const marks12 = [35, 72, 88, 40, 25];
+const marks12 = [15, 12, 48, 40, 25];
+const passCount = marks12.reduce((count, marks12) => {
+  return marks12 >= 40 ? count + 1 : count;
+}, 0);
+
+//8
+const transactions1 = [1000, -200, -300, 500];
+const finalBalance = transactions1.reduce((balance, amount) => balance + amount, 0);
+
+//10
+const items = ['Pen', 'Book', 'Pencil'];
+const result1 = items.reduce((text, items) => text + ', ' + items);
