@@ -33,3 +33,5 @@ User['name'];
 // User[demo] --> convert into name (demo = 'name')
 
 // --> output: abc
+
+const step = [1000, 2000, 3000];

@@ -897,3 +897,209 @@ arr2.push(arr2.shift());
 ans:[2, 3, 1]
 why: shift() --> removes first element-->[2,3]-->REMOVE THAY 1
     push() → adds element to the end-->[2,3,1]-->1 ADD THAY EM 
+
+<!--DAY:08(01)""-->
+1. Double daily steps count
+
+Real life: Fitness app doubling step goal
+
+const step = [1000, 2000, 3000];
+
+function doubleSteps(step) {
+  return step * 2;
+}
+
+const newSteps = step.map(doubleSteps);
+answer:[2000, 4000, 6000]
+
+
+2. Convert minutes to seconds
+
+Real life: Video duration calculation
+
+const minutes = [1, 5, 10];
+
+const seconds = minutes.map(function(min) {
+  return min * 60;
+});
+answer:[60, 300, 600]
+
+
+3. Add ₹50 delivery charge to prices
+
+Real life: Food delivery app
+
+const prices = [200, 350, 500];
+
+const finalPrices = prices.map(price => price + 50);
+answer:[250, 400, 550]
+
+
+4. Convert exam marks to grades
+
+Real life: Result system
+
+const mark = [35, 72, 88, 40];
+
+function getGrade(mark) {
+  return mark >= 40 ? 'Pass' : 'Fail';
+}
+
+const grades = mark.map(getGrade);
+answer:['Fail', 'Pass', 'Pass', 'Pass']
+
+
+5. Capitalize names
+
+Real life: Display usernames properly
+
+const names = ['rahul', 'neha', 'amit'];
+
+const formattedNames = names.map(name =>
+  name[0].toUpperCase() + name.slice(1)
+);
+answer:['Rahul', 'Neha', 'Amit']
+
+
+6. Apply 10% discount
+
+Real life: Shopping sale
+
+const prices = [500, 1000, 1500];
+
+function applyDiscount(price) {
+  return price - price * 0.10;
+}
+
+const discounted = prices.map(applyDiscount);
+answer:[450, 900, 1350]
+
+
+7. Add bonus points to scores based on condition
+
+Real life: Game scoring system
+
+const scores = [45, 60, 85];
+
+const finalScores = scores.map(score => {
+  if (score >= 80) return score + 20;
+  if (score >= 50) return score + 10;
+  return score;
+});
+answer:[45, 70, 105]
+
+
+8. Convert temperatures with formula
+
+Real life: Weather app
+
+const celsius = [0, 20, 30];
+
+function toFahrenheit(temp) {
+  return (temp * 9/5) + 32;
+}
+
+const fahrenheit = celsius.map(toFahrenheit);
+answer:[32, 68, 86]
+
+
+9. Generate table of numbers
+
+Real life: Math learning app
+
+const numbers = [1, 2, 3, 4];
+
+const tableOfTwo = numbers.map(num => num * 2);
+answer:[2, 4, 6, 8]
+
+
+10. Combine map with string formatting
+
+Real life: SMS notification system
+
+const balances = [500, 1200, 300];
+
+const messages = balances.map(balance =>
+  `Your balance is ₹${balance}`
+);
+answer:['Your balance is ₹500', 'Your balance is ₹1200', 'Your balance is ₹300']
+
+<!--day-8(2"filter")-->
+
+### 1. Get even numbers
+**Real life:** Find even roll numbers
+```js
+const numbers = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+```
+answer: [2, 4, 6]
+
+---
+
+### 2. Filter adults
+**Real life:** Allow only 3+ users
+```js
+const ages = [2, 1, 10, 16, 5];
+function isAdult(age) {
+  return age >= 18;
+}
+const adults = ages.filter(isAdult);
+```
+answer: [18];
+---
+
+### 3. Remove empty items
+**Real life:** Clean user input
+```js
+const inputs = ['Hello', '', 'World', '', 'JS'];
+const validInputs = inputs.filter(text => text !== '');
+```
+answer:['Hello', 'World', 'JS']
+
+---
+
+### 4. Filter passing marks
+**Real life:** Exam result system
+```js
+const marks = [35, 72, 88, 40, 25];
+const passedStudents = marks.filter(mark => mark >= 40);
+```
+answer:[72, 88, 40]
+---
+
+### 5. Get affordable prices
+**Real life:** Shopping app price filter
+```js
+const prices = [199, 499, 999, 1499, 299];
+const affordable = prices.filter(price => price <= 500);
+```
+answer:500 karta oochi [199, 499, 299]
+---
+
+### 6. Filter long words
+**Real life:** Search keyword validation
+```js
+const words = ['hi', 'hello', 'javascript', 'ok'];
+function isLongWord(word) {
+  return word.length > 3;
+}
+const longWords = words.filter(isLongWord);
+```
+answer:['hello', 'javascript'] 3 thi vadhare hoy e print thay
+
+### 7. Filter positive numbers
+**Real life:** Bank transaction validation
+```js
+const transactions = [200, -100, 500, -50, 300];
+const credits = transactions.filter(amount => amount > 0);
+```
+answer:[200, 500, 300] 0 thi vadhare hoy e print thay
+---
+
+### 8. Filter numbers within a range
+**Real life:** Score selection
+```js
+const scores = [45, 60, 85, 30, 90];
+const selectedScores = scores.filter(score => score >= 50 && score <= 90);
+```
+answer:[60, 85, 90] 50 thi vadhu and 90 thi oochu..

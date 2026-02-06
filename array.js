@@ -390,3 +390,119 @@ let arr8 = [1, 2, 3, 4, 5, 6, 7];
 let arr9 = [...arr8];
 //... --> rest --> into function
 //... --> spred --> into Array and Object
+
+
+//excerise:day-8
+//1.
+const step1 = [1000, 2000, 3000];
+
+function doubleStep(step1) {
+  return step1 * 2;
+}
+const newSteps = step1.map(doubleStep);
+
+//2
+const minutes = [1, 5, 10];
+
+const seconds = minutes.map(function(min) {
+  return min * 60;
+});
+
+//3
+const price1 = [200, 350, 500];
+const finalPrices = price1.map(price1 => price1 + 50);
+
+
+//4
+const mark = [35, 72, 88, 40];
+
+function getGrade(mark) {
+  return mark >= 40 ? 'Pass' : 'Fail';
+}
+
+const grades = mark.map(getGrade);
+
+//5
+const names1 = ['rahul', 'neha', 'amit'];
+
+const formattedNames = names1.map(names1 =>
+  names1[0].toUpperCase() + names1.slice(1)
+);
+
+//6.
+const price = [500, 1000, 1500];
+
+function applyDiscount(price) {
+  return price - price * 0.10;
+}
+
+const discounted = price.map(applyDiscount);
+
+//7
+const score = [45, 60, 85];
+
+const finalScores = score.map(score => {
+  if (score >= 80) return score + 20;
+  if (score >= 50) return score + 10;
+  return score;
+});
+
+//8
+const celsius = [0, 20, 30];
+
+function toFahrenheit(temp) {
+  return (temp * 9/5) + 32;
+}
+
+const fahrenheit = celsius.map(toFahrenheit);
+
+//9
+const numbers = [1, 2, 3, 4];
+
+const tableOfTwo = numbers.map(num => num * 2);
+
+//10
+const balances = [500, 1200, 300];
+
+const messages = balances.map(balance =>
+  `Your balance is ₹${balance}`
+);
+
+//Day-08(2)"filter"
+//1
+const numbers1 = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers1.filter(num => num % 2 === 0);
+
+//2
+const ages = [2, 1, 18, 16, 5];
+function isAdult(ages) {
+  return ages >= 18;
+}
+const adults = ages.filter(isAdult);
+
+//3
+const inputs = ['Hello', '', 'World', '', 'JS'];
+const validInputs = inputs.filter(text => text !== '');
+
+//4
+const marks1 = [35, 72, 88, 40, 25];
+const passedStudents = marks1.filter(marks1 => marks1 >= 40);
+
+//5
+const price2 = [199, 499, 999, 1499, 299];
+const affordable = price2.filter(price2 => price2 <= 500);
+
+//6
+const words = ['hi', 'hello', 'javascript', 'ok'];
+function isLongWord(words) {
+  return words.length > 3;
+}
+const longWords = words.filter(isLongWord);
+
+//7
+const transactions = [200, -100, 500, -50, 300];
+const credits = transactions.filter(amount => amount > 0);
+
+//8
+const scores1 = [45, 60, 85, 30, 90];
+const selectedScores = scores1.filter(scores1 => scores1 >= 50 && scores1 <= 90);
