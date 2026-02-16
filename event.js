@@ -55,4 +55,13 @@ console.log(dets.data);
 }
 });
 
+// change -- when you chagne elements state
+let sel = document.querySelector(".select");
+let mobile = document.querySelector("i")
+
+sel.addEventListener("change", (dets)=>{
+    console.log(dets);
+    console.log(dets.target.value);
+    mobile.textContent = dets.target.value;
+})
 
