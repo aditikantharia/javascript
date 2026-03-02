@@ -72,6 +72,7 @@ form.addEventListener("submit", (e) => {
   });
   form.reset();
   formContainer.style.display = "none";
+  RenderUi();
 });
 function saveData(note) {
   let data = JSON.parse(localStorage.getItem("notes")) || [];
@@ -92,34 +93,42 @@ function RenderUi() {
     //img(avtar)
     let img = document.createElement("img");
     img.classList.add("avatar");
+    img.setAttribute("src",note.imgurl);
 
     //h2
     let h2 = document.createElement("h2");
+    h2.textContent = note.u_name;
 
     //div(info)==>span(home,town)
     let info1 = document.createElement("div");
     info1.classList.add("info");
 
     let home=document.createElement("span");
+    home.textContent = "home town";
     let town=document.createElement("span");
-
+    town.textContent = note.town;
 
     //div(info)==>span(purpose,note(data))
     let info2 = document.createElement("div");
     info2.classList.add("info");
 
     let purpose=document.createElement("span");
+    purpose.textContent = "purpose";
     let note_message=document.createElement("span");
+    note_message.textContent = note.purpose;
 
     //div(buttons) ==>buttons(call,msg)
     let buttons=document.createElement("div");
     buttons.classList.add("buttons");
 
     let call=document.createElement("button");
+    call.innerHTML=`<i class="ri-phone-line"></i> Call`
     call.classList.add("call");
 
     let msg=document.createElement("button");
     msg.classList.add("msg");
+    msg.innerHTML=`<i class="ri-phone-line"></i> messgae`
+    
 
     //append
     stack.appendChild(card);
@@ -139,3 +148,26 @@ function RenderUi() {
   });
 }
 RenderUi();
+
+//upbutton
+
+let upBtn = document.querySelector("#upBtn");
+
+upBtn.addEventListener('click',()=>{
+    let lastchild = stack.lastElementChild;
+
+    if(lastchild){
+        stack.append(lastchild, stack.firstElementChild);
+    }
+    });
+
+//down btn
+let downBtn = document.querySelector("#downBtn");
+
+downBtn.addEventListener("click",()=>{
+    let firstchild = stack.firstElementChild;
+
+    if(firstchild){
+       stack.append(firstchild, stack.firstElementChild);
+    }
+});
