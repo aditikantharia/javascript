@@ -117,7 +117,7 @@ console.log(p1);
 
 //manual binding
 // class ,apply,bind
-//function ne call akrti vakhte this keyword ni value set karva mate call, apply,bind method no upyog kariye chiye
+//function ne call krti vakhte this keyword ni value set karva mate call, apply,bind method no upyog kariye chiye
 
 
 let obj5 ={
